@@ -1,0 +1,37 @@
+.specifics-list {
+  display: flex;
+  justify-content: center;
+}
+
+.specifics-list__item:not(:last-child) {
+  margin-right: var(--card-list-gap);
+}
+
+.specifics-list__link {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--card-list-gap);
+}
+
+.specifics-list__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.specifics-list__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
