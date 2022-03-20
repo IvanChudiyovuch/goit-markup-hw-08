@@ -9,16 +9,27 @@
 }
 
 .section-list {
-  display: flex;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .section-list--indentation-lower {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
 }
 
-.section-list__item:not(:last-child) {
-  margin-right: 8px;
+.section-list__item {
+  display: inline-block;
+  margin-bottom: 21px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .section-list__btn {

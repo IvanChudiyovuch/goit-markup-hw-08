@@ -15,8 +15,10 @@
 }
 
 .site-nav__list {
-  display: flex;
-  margin-left: 93px;
+  display: none;
+
+  // display: flex;
+  // margin-left: 93px;
 }
 
 .site-nav__link {
@@ -52,8 +54,10 @@
 }
 
 .header-address {
-  display: flex;
-  margin-left: auto;
+  display: none;
+
+  // display: flex;
+  // margin-left: auto;
 }
 
 .header-address__item {
@@ -88,4 +92,119 @@
 .header-address__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.menu-button {
+  display: block;
+  margin-left: auto;
+  background-color: #ffffff;
+  border: inherit;
+}
+
+.mob-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mob-menu__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border: inherit;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.mob-menu__list {
+  margin-bottom: 302px;
+}
+
+.mob-menu__item {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mob-menu-address {
+  margin-bottom: 64px;
+}
+
+.mob-menu-address__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-menu-addres-tel__link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-menu-address-mail__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: #757575;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-menu-socials__list {
+  display: flex;
+  align-items: center;
+}
+
+.mob-menu-socials__item {
+  &:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+  }
+}
+
+.mob-menu-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
