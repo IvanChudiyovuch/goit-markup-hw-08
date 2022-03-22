@@ -1,3 +1,11 @@
+.occupation-none {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .section--not-padding-top {
   padding-top: 0;
 }
