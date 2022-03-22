@@ -173,8 +173,13 @@
                 <ul class="occupation">
                     <li class="occupation__item">
                         <div class="occupation__thumb">
-                            <img src="./imajes/box1.jpg" alt="стол с ноутбуком на 
-                            катором верстают сайт" width="370" height="294">
+                            <picture>
+                                <source srcset="./imajes/box1.jpg 1x, 
+                            ./imajes/occupation1-desc-2ximg.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <img src="./imajes/box1.jpg" alt="стол с ноутбуком на  катором верстают сайт">
+                            </picture>
                             <p class="occupation__text">Десктопные приложения</p>
                         </div>
                     </li>
