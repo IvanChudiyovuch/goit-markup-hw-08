@@ -1191,6 +1191,10 @@ img {
   }
 }
 
+.footer-list {
+  display: block;
+}
+
 .footer-list__item:not(:last-child) {
   margin-bottom: 8px;
 }
