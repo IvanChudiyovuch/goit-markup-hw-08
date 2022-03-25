@@ -13,6 +13,10 @@
 .team__item {
   margin-bottom: var(--card-list-gap);
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: 768px) {
     margin: 15px;
     flex-basis: calc((100% - 60px) / 2);

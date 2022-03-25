@@ -7,7 +7,7 @@
 
   width: 100vw;
   height: 100vh;
-
+  padding: 15px;
   background: rgba(0, 0, 0, 0.2);
 
   &.is-hidden {
@@ -22,10 +22,7 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0) scale(1);
+  position: relative;
   transition: transform 250ms;
 
   width: 100%;
@@ -39,6 +36,13 @@
 
   @media screen and (min-width: 480px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0) scale(1);
   }
 
   @media screen and (min-width: 1200px) {
@@ -77,10 +81,14 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+
+  @media screen and (min-width: 1200px) {
+    line-height: calc(23 / 20);
+  }
 }
 
 .form-field {
@@ -174,10 +182,15 @@
   align-items: center;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .form-checkbox__text {
